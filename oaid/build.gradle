@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        flavorDimensions project.ext.oaidFlavor
+    }
+
+    productFlavors {
+        oaid_1_0_13 {}
+        oaid_1_0_23 {}
+        oaid_1_0_25 {}
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    oaid_1_0_13Api files('libs/msa_mdid_1.0.13.aar')
+    oaid_1_0_23Api files('libs/oaid_sdk_1.0.23.aar')
+    oaid_1_0_25Api files('libs/oaid_sdk_1.0.25.aar')
+//    implementation fileTree(dir:'libs', includes: ['*.aar'])
+}
+
+

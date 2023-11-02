@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="KLCommonTitleBar">
+        <attr name="title" format="string" />
+        <attr name="showTitle" format="boolean" />
+        <attr name="showBackView" format="boolean" />
+        <attr name="showCloseView" format="boolean" />
+        <attr name="showImageView" format="boolean" />
+    </declare-styleable>
+</resources>

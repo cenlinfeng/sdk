@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/kl_exclusive_volume_bj">
+
+        <TextView
+            android:id="@+id/kl_tv_special_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/klfont_red"
+            android:textSize="13dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@mipmap/kl_exclusive_volume_bottom" />
+
+        <TextView
+            android:id="@+id/kl_tv_exclusive_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="130dp"
+            android:gravity="center"
+            android:text="敬请期待"
+            android:textColor="@color/klfont_white"
+            android:textSize="20sp" />
+
+        <!-- 装卷的容器-->
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp">
+
+            <com.ddtsdk.ui.view.HorizontalListView
+                android:id="@+id/kl_lv_exclusive_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@mipmap/kl_exclusive_volume_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="35dp"
+                android:text="专属幸运礼卷"
+                android:textColor="@color/klfont_white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="活动规则及内容:"
+                android:textColor="@color/klfont_white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="1、购买直充卷后可用在游戏内抵扣充值\n2、每次购买直充卷有效期为7天,请在有效期内使用完，过期后不给予补发\n3、购买直充卷后，不支持退款"
+                android:textColor="@color/klfont_white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/kl_iv_arrow_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="120dp"
+            android:background="@mipmap/kl_arrow_left"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/kl_iv_arrow_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="123dp"
+            android:background="@mipmap/kl_arrow_right"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

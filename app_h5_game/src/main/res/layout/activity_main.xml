@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--设置图片-->
+    <ImageView
+        android:id="@+id/temp_img"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="backgrounding"
+        tools:ignore="HardcodedText" />
+    <!--国家规定健康提示-->
+    <FrameLayout
+        android:id="@+id/web_fy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+       android:visibility="gone" />-->
+
+</LinearLayout>

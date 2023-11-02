@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.gr.xxsy22d.sdb.nearme.gamecenter"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 3
+        versionName "8.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk{
+            abiFilter 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false //不要开压缩，不然打出来的release.apk包在运行时x5会闪退
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+//            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs{
+        release{
+//            storeFile file("D:/pro/ddt.keystore")
+            keyAlias "kaola"
+            storePassword "kaolasdk"
+            keyPassword "kaolasdk"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs '../ddtsdk/libs'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs '/libs'
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation project(':ddtsdk')
+
+}

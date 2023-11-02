@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/kl_ll_pay_volume_on"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/kl_voucher_on_left" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/klfont_orange_98"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/kl_pay_voucher_on_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="满减10元卷"
+                    android:textColor="@color/klfont_red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/kl_pay_expired_time_on_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="有效期至:2022.04.01"
+                    android:textColor="@color/klfontgrey_black" />
+            </LinearLayout>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="使用"
+                android:textSize="13sp"
+                android:textColor="@color/klfont_white"
+                android:background="@drawable/kl_shape_circle_buttom"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/kl_voucher_on_right" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/kl_ll_pay_volume_off"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/kl_voucher_off_left" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_d7d7d7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/kl_pay_voucher_off_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="满减10元卷"
+                android:textColor="@color/color_9c9c9c"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/kl_pay_expired_time_off_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="有效期至:2022.04.01"
+                android:textColor="@color/color_aaaaaa" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/kl_voucher_off_right" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="@color/klfont_white" />
+
+</LinearLayout>

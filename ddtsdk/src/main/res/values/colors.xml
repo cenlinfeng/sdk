@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="klColorPrimary">#ff9201</color>
+    <!--    <color name="klColorPrimary">#ee483d</color>-->
+    <color name="kl_platform_transparent_background">#BF000000</color>
+    <color name="kltransparent_background">#50000000</color>
+    <color name="klfont_black">#000000</color>
+    <color name="klfont_black_lucency">#80000000</color>
+    <color name="klfont_white">#ffffff</color>
+    <color name="klfont_orange">#fc9401</color>
+    <color name="klfont_somber">#BEBEBE</color>
+    <color name="klfont_red">#E91E1E</color>
+    <color name="klfont_red_lucency">#80E91E1E</color>
+    <color name="klfontgrey_black">#4e4d4d</color>
+    <color name="klgrey_black">#196a83</color>
+    <color name="kl_realname_blue">#1890C7</color>
+    <color name="kl_background">#e5e4e4</color>
+    <color name="klother">#00000001</color>
+    <color name="klgrey_bg">#f0f0f0</color>
+    <color name="klfont_black_96">#969696</color>
+    <color name="klfont_black_0d">#14110d</color>
+    <color name="klfont_orange_98">#fdac4d</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_8c8c8c">#8c8c8c</color>
+    <color name="color_007cf1">#007cf1</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_889099">#889099</color>
+    <color name="color_ff9201">#ff9201</color>
+    <color name="color_ffad42">#ffad42</color>
+    <color name="color_ee483d">#ee483d</color>
+    <color name="color_464646">#464646</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    <color name="color_9c9c9c">#9c9c9c</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="kl_highlight_color">#FF333333</color>
+    <color name="color_fdef94">#fdef94</color>
+    <color name="color_e8aa49">#dd8d3a</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_fff7f2">#fff7f2</color>
+    <!--    <color name="color_187aed">#187aed</color>-->
+</resources>

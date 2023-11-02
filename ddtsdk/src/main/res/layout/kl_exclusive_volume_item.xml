@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/kl_ll_exclusive_layout"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/kl_exclusive_volume_on"
+        android:orientation="vertical">
+        <!--title   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="直充卷"
+                android:textColor="@color/klfont_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kl_ll_to_pay_exclusive_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="￥9999"
+                android:textColor="@color/klfont_black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="------------"
+                android:textColor="@color/klfont_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="可领9999/5张"
+                android:textColor="@color/klfont_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_discounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="（立减9999元）"
+                android:textColor="@color/klfont_red"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kl_ll_exclusive_off_layout"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/kl_exclusive_volume_off"
+        android:orientation="vertical">
+        <!--title   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_off_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="次数已购完"
+                android:textColor="@color/klfont_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kl_ll_to_pay_exclusive_off_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_price_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="￥9999"
+                android:textColor="@color/klfont_black_lucency"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="------------"
+                android:textColor="@color/klfont_black_lucency"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_num_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="可领9999/5张"
+                android:textColor="@color/klfont_black_lucency"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kl_tv_exclusive_discounts_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="（立减9999元）"
+                android:textColor="@color/klfont_red_lucency"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

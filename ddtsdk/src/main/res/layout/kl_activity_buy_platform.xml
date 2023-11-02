@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/klfont_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@color/klfont_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="平台币充值"
+                    android:textColor="@color/klfont_orange"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/kl_closeiv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/kl_close" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/klfont_black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/klbgshape"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/kl_gv_pay_amount_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/klfont_white"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/klfont_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:id="@+id/kl_rg_buy_platform_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/kl_buy_platform_wechat"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kl_selectir_shape_pay"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@mipmap/kl_wechat"
+                            android:paddingLeft="10dp"
+                            android:text="微信支付" />
+
+                        <RadioButton
+                            android:id="@+id/kl_buy_platform_alipay"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kl_selectir_shape_pay"
+                            android:button="@null"
+                            android:drawableLeft="@mipmap/kl_alipay"
+                            android:paddingLeft="10dp"
+                            android:text="支付宝支付" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.ddtsdk.ui.view.KLButtonView
+                    android:id="@+id/kl_btn_buy_platform"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/klorange_btn_style"
+                    android:gravity="center"
+                    android:text="支付"
+                    android:textColor="@color/klfont_white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/klfont_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

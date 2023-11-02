@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/klfont_white"
+    android:orientation="vertical">
+
+    <com.ddtsdk.ui.view.KLCommonTitleBar
+        android:id="@+id/kl_titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="激活码" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_8c8c8c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="输入激活码："
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/kl_ed_code_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/kl_btn_code_key_submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/klpopup_btn_bg"
+            android:text="提交激活码" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/kl_main_view"
+        android:layout_width="330dp"
+        android:layout_height="250dp"
+        android:minHeight="180dp"
+        android:background="@drawable/klbgshape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/klshape_bule_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kl_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="温馨提示"
+                android:textColor="@color/klfont_white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/kl_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/useragreement_notice"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/mks_ll_user_agreement_notice"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/mks_cb_user_agreement_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mks_selector_checkbox"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:text="我已查看最新"
+                android:drawablePadding="6dp"
+                android:paddingLeft="6dp"
+                android:textColor="@color/color_8c8c8c"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mks_tv_user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mks_tv_user_agreement"
+                android:textSize="12sp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/klfont_orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="及"
+                android:textSize="12sp"
+                android:textColor="@color/color_8c8c8c"/>
+            <TextView
+                android:id="@+id/mks_tv_privacy_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mks_tv_privacy_agreement"
+                android:textSize="12sp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/klfont_orange"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="13dp"
+            android:orientation="horizontal"
+            android:layout_height="32dp">
+
+            <TextView
+                android:id="@+id/kl_cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/klshape_stroke_bule"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/klColorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/kl_submit_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/klorange_btn_style"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/klfont_white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

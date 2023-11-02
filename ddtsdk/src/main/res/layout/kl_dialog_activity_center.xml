@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+
+    <com.ddtsdk.ui.view.KLCommonTitleBar
+        android:id="@+id/kl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBackView="false"
+        app:showCloseView="true"
+        app:title="活动中心" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_8c8c8c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/kl_tv_key_code"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kl_key_code"
+            android:drawableRight="@mipmap/kl_icon_arrow_right"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:text="代金卷激活码兑换"
+            android:textColor="@color/kl_highlight_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_8c8c8c" />
+
+        <TextView
+            android:id="@+id/kl_tv_voucher"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kl_youhuiquan"
+            android:drawableRight="@mipmap/kl_icon_arrow_right"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:text="购买优惠券"
+            android:textColor="@color/kl_highlight_color"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_8c8c8c" />
+
+        <TextView
+            android:id="@+id/kl_tv_lick_poker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kl_poker"
+            android:drawableRight="@mipmap/kl_icon_arrow_right"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:text="幸运德州"
+            android:textColor="@color/kl_highlight_color"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_8c8c8c" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
